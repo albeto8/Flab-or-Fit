@@ -15,6 +15,7 @@
         android:layout_weight="1"
         android:background="@drawable/rounded_corners"
         android:backgroundTint="#2ca5f5"
+        android:id="@+id/weightBtn"
         android:paddingTop="10dp">
 
         <ImageView
@@ -75,6 +76,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/yogaBtn"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="5dp"
@@ -142,6 +144,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/cardioBtn"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="5dp"
