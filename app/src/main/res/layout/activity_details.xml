@@ -1,9 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainBG"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2ca5f5"
+    android:orientation="vertical"
     tools:context="com.example.mariobarragan.flaborfit.DetailsActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/exerciseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Weight Lifting"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/excerciseIimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/weight" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#20000000"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:paddingTop="10dp"
+            android:text="Mark it Complete!" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:buttonTint="#ffffff"
+            android:textSize="20sp"
+            android:paddingLeft="100dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Complete set 1" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:buttonTint="#ffffff"
+            android:textSize="20sp"
+            android:paddingLeft="100dp"
+            android:layout_marginBottom="5dp"
+            android:text="Complete set 1" />
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:buttonTint="#ffffff"
+            android:textSize="20sp"
+            android:paddingLeft="100dp"
+            android:layout_marginBottom="5dp"
+            android:text="Complete set 1" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:buttonTint="#ffffff"
+            android:textSize="20sp"
+            android:paddingLeft="100dp"
+            android:layout_marginBottom="5dp"
+            android:text="Complete set 1" />
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:buttonTint="#ffffff"
+            android:textSize="20sp"
+            android:paddingLeft="100dp"
+            android:layout_marginBottom="5dp"
+            android:text="Complete set 1" />
+    </LinearLayout>
+
+</LinearLayout>

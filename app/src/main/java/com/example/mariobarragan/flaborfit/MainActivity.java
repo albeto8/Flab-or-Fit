@@ -1,5 +1,6 @@
 package com.example.mariobarragan.flaborfit;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -7,6 +8,7 @@ import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String EXTRA_ITEM_TITLE = "itemTitle";
     public static final String EXCERCISE_WEIGHTS = "Weight lifting";
     public static final String EXCERCISE_YOGA = "Yoga";
     public static final String EXCERCISE_CARDIO = "Cardio";
@@ -43,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loadDetailActivity(String excerciseTitle) {
-
+        Intent intent = new Intent(MainActivity.this, DetailsActivity.class);
+        intent.putExtra(MainActivity.EXTRA_ITEM_TITLE, excerciseTitle);
+        startActivity(intent);
     }
 }
